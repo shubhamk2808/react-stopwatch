@@ -11,7 +11,7 @@ const StopwatchTimer = () => {
     let interval = null;
     if (isRunning) {
       interval = setInterval(() => {
-        setTime(time => time + 10);
+        setTime(time => time + 1);
       }, 10);
     } else if (!isRunning && time !== 0) {
       clearInterval(interval);
